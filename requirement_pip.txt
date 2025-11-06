@@ -1,0 +1,16 @@
+Brotli @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_f7i0oxypt6/croot/brotli-split_1736182464088/work
+contourpy @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_2cvjf0v4ux/croot/contourpy_1732540055997/work
+cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+fonttools @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ce1jt_55vl/croot/fonttools_1737039388732/work
+kiwisolver @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_cc2l_z_0ri/croot/kiwisolver_1737039586949/work
+matplotlib==3.9.2
+numpy @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_15fk808o03/croot/numpy_and_numpy_base_1750883807193/work/dist/numpy-2.3.1-cp313-cp313-macosx_11_0_arm64.whl#sha256=5eca95f71311403d53b0c82f69c6d795543a695241dc0a0673c24cf532481fce
+packaging @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_b31rpdx1of/croot/packaging_1753775365574/work
+pillow @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_94x67n90dt/croot/pillow_1752524540258/work
+pyparsing @ file:///Users/builder/cbouss/buildout/croot/pyparsing_1735850351026/work
+python-dateutil @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/python-dateutil_1728585579455/work
+scipy @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_a6tduwqpgl/croot/scipy_1753384422235/work/dist/scipy-1.16.0-cp313-cp313-macosx_11_0_arm64.whl#sha256=dc5817ef72a356fc89c1e9d93c1daab762725a714879182fd69195942bf39a08
+setuptools==72.1.0
+six @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_03myqm7p6o/croot/six_1744271511946/work
+tornado @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_63s3osc0_1/croot/tornado_1748956943583/work
+wheel==0.45.1
