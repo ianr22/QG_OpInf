@@ -1,9 +1,11 @@
 from matplotlib.pyplot import *
 import matplotlib.animation as animation
+import scipy.io as sio
 
 from config.config import *
 
-FOM_data = np.load('data/ref_traj.npy')
+mat_data = sio.loadmat(trajectory_file_500)
+FOM_data = mat_data["y"].T[:, :nt]
 
 Galerkin_ROM_data   = np.load(Galerkin_ROM_sol_file)
 OpInf_ROM_data      = np.load(OpInf_ROM_sol_file)
@@ -13,7 +15,7 @@ print(FOM_data.shape)
 fontsize = 5
 
 rc("figure", dpi=400)           # High-quality figure ("dots-per-inch")
-rc("text", usetex=True)         # Crisp axis ticks
+# rc("text", usetex=True)         # Crisp axis ticks
 rc("font", family="sans-serif")      # Crisp axis labels
 # rc("legend", edgecolor='none')  # No boxes around legends
 rc('text.latex', preamble=r'\usepackage{amsfonts}')

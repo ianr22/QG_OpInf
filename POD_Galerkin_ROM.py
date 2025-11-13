@@ -1,5 +1,6 @@
 import os, sys
 import os.path
+import scipy.io as sio
 from scipy.sparse import spdiags, lil_matrix
 from scipy.integrate import solve_ivp
 from scipy.linalg import svd
@@ -7,7 +8,8 @@ from scipy.linalg import svd
 from utils.utils import *
 from config.config import *
 
-Xt = np.load('data/snapshots.npy')
+mat_data = sio.loadmat(trajectory_file_500)
+Xt = mat_data["y"].T
 
 # do an economy svd
 U, S, _ = svd(Xt, full_matrices=False)

@@ -6,8 +6,8 @@ import scipy.io as sio
 if __name__ == '__main__':
 
 	mat_data = sio.loadmat(trajectory_file_500)
-	Q_train = mat_data["y"].T
-	# Q_train = Q_train[:, :nt]
+	Q = mat_data["y"].T
+	Q_train = Q[:, :nt]
 
 	print(Q_train.shape)
 
@@ -154,8 +154,8 @@ if __name__ == '__main__':
 
 			Q_OpInf = Phir_global @ Qtilde_OpInf.T
 
-			print(np.linalg.norm(Q_OpInf[:, :nt] - Q_train[:, :nt])/np.linalg.norm(Q_train[:, :nt]))
-			print(np.linalg.norm(Q_OpInf[:, nt:] - Q_train[:, nt:])/np.linalg.norm(Q_train[:, nt:]))
+			print(np.linalg.norm(Q_OpInf[:, :nt] - Q[:, :nt])/np.linalg.norm(Q[:, :nt]))
+			print(np.linalg.norm(Q_OpInf[:, nt:] - Q[:, nt:])/np.linalg.norm(Q[:, nt:]))
 
 			if max_growth_trial < max_growth:
 
