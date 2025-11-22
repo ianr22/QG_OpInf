@@ -5,7 +5,7 @@ import scipy.io as sio
 from config.config import *
 
 mat_data = sio.loadmat(trajectory_file_500)
-FOM_data = mat_data["y"].T[:, :nt]
+FOM_data = mat_data["y"].T
 
 Galerkin_ROM_data   = np.load(Galerkin_ROM_sol_file)
 OpInf_ROM_data      = np.load(OpInf_ROM_sol_file)

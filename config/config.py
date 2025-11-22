@@ -11,7 +11,7 @@ alp     = -3.0
 rho     = 0.0
 
 nsol        =  2
-r   		= 33
+r   		= 60
 
 N       = 25
 N_ROM   = 100
@@ -21,8 +21,8 @@ Xg  = np.linspace(-10, 10, n)
 dx  = Xg[1] - Xg[0]
 
 dt          = 0.0109  # step size
-nt_all      = 500 # total number of snapshots
-nt          = 500 # the end of the training time horizon
+nt_all      = 4000 # total number of snapshots
+nt          = 2000 # the end of the training time horizon
 
 target_energy = 0.9999
 
